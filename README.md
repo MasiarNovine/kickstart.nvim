@@ -12,6 +12,20 @@ A starting point for Neovim that is:
 
 ## Installation
 
+### Remove previous nvim configuration and install a fresh installation
+
+The following command removes any previous installed plugins and configuration:
+
+```bash
+rm -rf "${XDG_CONFIG_HOME:-$HOME/.local/share}"/nvim && rm -rf "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+
+Then the kickstarter configuaration can be downloaded:
+
+```bash
+git clone https://github.com/MasiarNovine/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+
 ### Install Neovim
 
 Kickstart.nvim targets *only* the latest
